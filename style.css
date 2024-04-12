@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 20px;
+  text-align: center;
+  color: rgba(22, 20, 20, 0.479);
+}
+
+.pizzas{
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgba(189, 182, 182, 0.685);
+  margin: auto;
+}
+
+.pizza{
+  padding: 8px 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  margin: 10px;
+  background-color: white;
+}
+
+.nombre{
+  font-size: 0.88em;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.imagen{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 5%;
+}
+
+img{
+  width: 70%;
+}
+
+.pizza button{
+  background-color: rgba(196, 46, 9, 0.801);
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+button{
+  text-decoration: none;
+}
+
+button:hover{
+  background-color: red;
+}
+
+
+/*
+  PARA EL MODAL
+  Con white-space hacemos que el texto no baje a otra linea 
+  y con overflow que el el texto que excedé se oculte,
+  mientras con text-overflow: ellipsis se muestre los punto supensivos
+
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+
+*/
