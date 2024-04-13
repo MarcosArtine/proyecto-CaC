@@ -9,20 +9,19 @@ h2{
   color: rgba(22, 20, 20, 0.479);
 }
 
-.pizzas{
+.destacados, .pizzas{
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: rgba(189, 182, 182, 0.685);
-  margin: auto;
 }
 
+
 .pizza{
-  padding: 8px 2px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
-  margin: 10px;
+  margin: 30px 20px;
   background-color: white;
 }
 
@@ -42,43 +41,25 @@ h2{
 }
 
 img{
-  width: 70%;
+  width: 100%;
 }
 
 .pizza button{
-  background-color: rgba(196, 46, 9, 0.801);
+  background-color: rgb(180, 42, 8);
   color: white;
   text-align: center;
   padding: 5px 15px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: 5px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .info{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3px;
+  margin: 10px;
 }
 
-button{
-  text-decoration: none;
-}
-
-button:hover{
+.pizza button:hover{
   background-color: red;
 }
-
-
-/*
-  PARA EL MODAL
-  Con white-space hacemos que el texto no baje a otra linea 
-  y con overflow que el el texto que excedé se oculte,
-  mientras con text-overflow: ellipsis se muestre los punto supensivos
-
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
-
-*/
