@@ -1,15 +1,53 @@
+
+.borrar{
+  height: 300px;
+}
+
+
 body{
   margin: 0;
   padding: 0;
 }
 
-h2{
-  font-size: 20px;
+#empanadas h2, #pizzas h2{
+  font-size: 40px;
   text-align: center;
-  color: rgba(22, 20, 20, 0.479);
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.destacados, .pizzas{
+ul {
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+hr{
+  margin: 40px;
+}
+
+.destacados{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.animacion{
+  animation: move;
+  animation-duration: 2s;
+}
+
+.destacado{
+  flex-grow: 1;
+  width: 300px;
+  max-width: 530px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.pizzas{
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
@@ -22,7 +60,21 @@ h2{
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
   margin: 30px 20px;
-  background-color: white;
+  background-color: white;  
+  border: 1px solid rgba(128, 128, 128, 0.705);
+  border-radius: 15px;
+}
+
+.empanadas{
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.empanada{
+  margin: 30px 20px;
+  background-color: white;  
 }
 
 .nombre{
@@ -35,20 +87,18 @@ h2{
 .imagen{
   display: flex;
   justify-content: center;
-  width: 90%;
-  margin: auto;
-  border-radius: 5%;
 }
 
 img{
-  width: 100%;
+  width: 90%;
 }
 
-.pizza button{
-  background-color: rgb(180, 42, 8);
+.pizza button, .empanada button{
+  background-color: #fca757;
   color: white;
   text-align: center;
   padding: 5px 15px;
+  border: none;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -60,6 +110,19 @@ img{
   margin: 10px;
 }
 
-.pizza button:hover{
-  background-color: red;
+.pizza button:hover,.empanada button:hover  {
+  background-color: orangered;
+}
+
+
+@keyframes move {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
