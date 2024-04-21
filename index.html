@@ -6,6 +6,9 @@
   <title>Pizzeria El 10</title>  
   <link rel="icon" type="image/png" href="pizza.png" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesPedidos.css" /> <!-- Styles para la section "Pedidos" -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Scripts para "Pedidos" -->
+  <script src="agregarMas.js"></script> <!-- Scripts para "Pedidos" -->
 </head>
 <body>  
   <section>
@@ -198,7 +201,72 @@
   </section>
   <script src="script.js"></script>
 
-  <!-- Test branch -->
+
+  <section id="Pedidos">
+    <div class="pedidos">
+      <div class="divPedidos">
+        <form action="#" method="POST">
+            <div class="opcionesComida">
+                <label for="Comida"><h1>Pedir:</h1></label><br>
+                <select name="ComidaSelector" id="IDComida">
+                    <option value="0" disabled>--Pizzas--</option>
+                    <option value="1">Americana</option>
+                    <option value="2">Cuatro Quesos</option>
+                    <option value="3">Provolone</option>
+                    <option value="4">Calabresa</option>
+                    <option value="5">Fugazzetta</option>
+                    <option value="6">Jamon</option>
+                    <option value="7">Jamon y Morron</option>
+                    <option value="8">Rucula</option>
+                    <option value="9">Napolitana</option>
+                    <option value="10">Muzzarella</option>
+                    <option value="11">Doble Muzzarella</option>
+                    <option value="12" disabled>--Empanadas--</option>
+                    <option value="13">Carne</option>
+                    <option value="14">Carne Picante</option>
+                    <option value="15">Cebolla y Queso</option>
+                    <option value="16">Humita</option>
+                    <option value="17">Jamon y Queso</option>
+                    <option value="18">Pollo</option>
+                    <option value="19">Verdura</option>
+                    <option value="20">Meditarranea</option>
+                    <option value="21">Roquefort, Jamon y Apio</option>
+                    <option value="22">Carne Cortada a Cuchillo</option>
+                    <option value="23">Carne Suave</option>
+  
+                </select>
+                <label for="CantidadComida">Cantidad:</label>
+                <input type="number" name="cantidad" size="3" placeholder="0"><br>
+            </div>
+            <br>
+            <div class="botonAgregarComida">
+                <button type="button" class="masItems">Agregar Comida</button>
+                <br><br>
+            </div>
+            <hr>
+            <div class="Delivery">
+                <label for="datosDeEntrega"><h1>Datos de Entrega:</h1></label><br>
+  
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+    
+                <label for="direccion">Direccion De Entrega:</label><br>
+                <input type="text" name="direccion" size="50" placeholder="Calle, Numero y Piso"><br><br>
+    
+                <label for="adicional">Informacion Adicional:</label><br>
+                <input type="text" name="adicional" size="50" placeholder="Describa el punto de entrega"><br><br>
+    
+                <label for="telefono">Numero De Telefono:</label><br>
+                <input type="text" name="telefono" size="10" placeholder=""><br><br>
+                <button type="submit">Hacer Pedido</button>
+            </div>
+            
+        </form>
+      </div>
+    </div>
+    
+  </section>
+
 
 </body>
 </html>

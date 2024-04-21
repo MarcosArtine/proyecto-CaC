@@ -1,0 +1,28 @@
+.pedidos{
+    /* grid-area: pedidos; Para el Test Grid */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;    /* manda las cosas al centro eje X */
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;                   /* Adaptar a gusto a futuro, uso % para que al dar al boton */
+    background-color: black;      /* "Agregar Mas" no se salga de su contenedor */
+
+    /* Mismas reglas de fuentes que el resto de la pagina */
+    font-size: 0.88em;
+    text-align: center;
+    font-weight: bold;
+    /* Mismas reglas de fuentes que el resto de la pagina */
+    flex-wrap: wrap;
+    padding: 10px;                  /* Sin padding queda diferente a la seccion del medio */
+
+}
+
+.divPedidos{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 95%;
+    height: 95%;
+    background-color: rgb(26, 26, 26, 90%);
+}
