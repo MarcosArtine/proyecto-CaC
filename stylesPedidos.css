@@ -14,15 +14,113 @@
     font-weight: bold;
     /* Mismas reglas de fuentes que el resto de la pagina */
     flex-wrap: wrap;
-    padding: 10px;                  /* Sin padding queda diferente a la seccion del medio */
+    padding: 0px;                  /* Sin padding queda diferente a la seccion del medio */
+    
+    
+
 
 }
 
 .divPedidos{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     /* align-items: center; */
     width: 95%;
     height: 95%;
     background-color: rgb(26, 26, 26, 90%);
+
+    
+}
+
+.divPedidos h1{
+    font-size: 40px;
+}
+
+.textoPedidos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    background-color: black(8, 8, 8);
+}
+
+.inputCantidad{
+    width: 3em;                     /* Hace chiquitos el selector de cantidad */
+}
+
+.divPedidos form{
+    width: 95%;
+}
+
+.Delivery{
+    background-image: url("DeliveryPNG.png");
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.contactos{
+    /* grid-area: pedidos; Para el Test Grid */
+    color: black;
+    display: flex;
+    justify-content: space-evenly;    /* manda las cosas al centro eje X */
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;                   /* Adaptar a gusto a futuro, uso % para que al dar al boton */
+    /* background-color: white;*/      /* "Agregar Mas" no se salga de su contenedor */
+
+    /* Mismas reglas de fuentes que el resto de la pagina */
+    font-size: 0.88em;
+    text-align: center;
+    font-weight: bold;
+    /* Mismas reglas de fuentes que el resto de la pagina */
+    flex-wrap: wrap;
+    padding: 0px;                  /* Sin padding queda diferente a la seccion del medio */
+
+}
+
+.divContactos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    width: 95%;
+    height: 95%;
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-image: url(".imagenes\QuestionMarkBackgroundCortado.jpg");
+}
+
+.textoContactos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.textoContactos h1{
+    font-size: 40px;
+}
+
+.textoContactos h2{
+    font-size: 30px;
+}
+
+#contactos{
+    background-image: url("QuestionMarkBackgroundCortado.jpg");
+    
+    background-size: 100% 100%;
+    
+    /* background-color: transparent; */
+    /* height: 300px; */
 }

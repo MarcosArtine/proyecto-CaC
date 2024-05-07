@@ -203,13 +203,16 @@
 
 
   <section id="Pedidos">
+    
     <div class="pedidos">
+      
       <div class="divPedidos">
+        <div class="textoPedidos"> <h1 class="titulo">Pedir:</h1></div>
         <form action="#" method="POST">
             <div class="opcionesComida">
-                <label for="Comida"><h1>Pedir:</h1></label><br>
+                <!-- <label for="Comida"><h1 class="titulo">Pedir:</h1></label><br> -->
                 <select name="ComidaSelector" id="IDComida">
-                    <option value="0" disabled>--Pizzas--</option>
+                    <option value="0" disabled selected>--Pizzas--</option>
                     <option value="1">Americana</option>
                     <option value="2">Cuatro Quesos</option>
                     <option value="3">Provolone</option>
@@ -236,7 +239,7 @@
   
                 </select>
                 <label for="CantidadComida">Cantidad:</label>
-                <input type="number" name="cantidad" size="3" placeholder="0"><br>
+                <input class="inputCantidad" type="number" name="cantidad" size="3" placeholder="0"><br>
             </div>
             <br>
             <div class="botonAgregarComida">
@@ -259,12 +262,52 @@
                 <label for="telefono">Numero De Telefono:</label><br>
                 <input type="text" name="telefono" size="10" placeholder=""><br><br>
                 <button type="submit">Hacer Pedido</button>
+                <br>  <br>
             </div>
-            
         </form>
       </div>
     </div>
     
+  </section>
+
+  <hr>
+
+  <section id="contactos">
+    <div class="contactos">
+      <div class="divContactos">
+        <div class="textoContactos">
+
+          <h1>CONTACTO</h1>
+          
+          <h2>¿Tenes dudas, consultas, sugerencias o quejas?</h2>
+
+
+
+        </div>
+
+        
+
+        <form action="">
+          <label for="nombre">Nombre</label><br>
+          <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+    
+          <label for="direccion">Email</label><br>
+          <input type="text" name="email" size="50" placeholder="ejemplo@gmail.com"><br><br>
+
+          <label for="telefono">Numero De Telefono (Opcional):</label><br>
+          <input type="text" name="telefono" size="50" placeholder=""><br><br>
+    
+          <label for="adicional">Dejanos tu consulta:</label><br>
+          <input type="text" name="adicional" size="50" placeholder="¿En que podemos ayudarte?"><br><br>
+    
+                
+          <button type="submit">Enviar</button>
+        </form>
+
+      </div>
+
+    </div>
+
   </section>
 
 
