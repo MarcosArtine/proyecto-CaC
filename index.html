@@ -22,7 +22,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolorum necessitatibus quaerat optio architecto earum voluptas voluptates velit quaerat eos ipsam quam soluta molestias officia dolorum perspiciatis quae?</p>
                 </div>
                 <div class="buttonContainer">
-                    <button class="bebas-neue-regular orderButton">
+                    <button class="bebas-neue-regular orderButton" id="botonPedir">
                         <img class="orderIcon" src="./imagenes/check-payment-svgrepo-com.png" alt="">
                             Realizar pedido
                           </div>
@@ -202,75 +202,87 @@
   <script src="script.js"></script>
 
 
+  <!-- el id a agregar para los botones es: id="botonPedir" -->
+
   <section id="Pedidos">
-    
-    <div class="pedidos">
-      
-      <div class="divPedidos">
-        <div class="textoPedidos"> <h1 class="titulo">Pedir:</h1></div>
-        <form action="#" method="POST">
-            <div class="opcionesComida">
-                <!-- <label for="Comida"><h1 class="titulo">Pedir:</h1></label><br> -->
-                <select name="ComidaSelector" id="IDComida">
-                    <option value="0" disabled selected>--Pizzas--</option>
-                    <option value="1">Americana</option>
-                    <option value="2">Cuatro Quesos</option>
-                    <option value="3">Provolone</option>
-                    <option value="4">Calabresa</option>
-                    <option value="5">Fugazzetta</option>
-                    <option value="6">Jamon</option>
-                    <option value="7">Jamon y Morron</option>
-                    <option value="8">Rucula</option>
-                    <option value="9">Napolitana</option>
-                    <option value="10">Muzzarella</option>
-                    <option value="11">Doble Muzzarella</option>
-                    <option value="12" disabled>--Empanadas--</option>
-                    <option value="13">Carne</option>
-                    <option value="14">Carne Picante</option>
-                    <option value="15">Cebolla y Queso</option>
-                    <option value="16">Humita</option>
-                    <option value="17">Jamon y Queso</option>
-                    <option value="18">Pollo</option>
-                    <option value="19">Verdura</option>
-                    <option value="20">Meditarranea</option>
-                    <option value="21">Roquefort, Jamon y Apio</option>
-                    <option value="22">Carne Cortada a Cuchillo</option>
-                    <option value="23">Carne Suave</option>
-  
-                </select>
-                <label for="CantidadComida">Cantidad:</label>
-                <input class="inputCantidad" type="number" name="cantidad" size="3" placeholder="0"><br>
+    <div class="cajitaCSS" id="cajitaJS">   <!-- CajitaCSS para el CSS y cajitaJS para el JS, duh... -->
+      <div class="cajitaContenedor">        <!-- Cajita que va a ser invocada -->
+        <div class="cajitaMain">            <!-- Contenidos para la cajita aca -->
+          <div class="pedidos">
+            <div class="divPedidos">
+              <div class="textoPedidos"> 
+                <h1 class="titulo">Pedir:</h1>
+              </div>
+              <span class="cerrar">&times;</span>   <!-- El que lo saca me hace llorar NO TOCAR boton cerrar cajita -->
+              <form action="#" method="POST">
+                  <div class="opcionesComida">
+                      <select name="ComidaSelector" id="IDComida">
+                          <option value="0" disabled selected>--Pizzas--</option>
+                          <option value="1">Americana</option>
+                          <option value="2">Cuatro Quesos</option>
+                          <option value="3">Provolone</option>
+                          <option value="4">Calabresa</option>
+                          <option value="5">Fugazzetta</option>
+                          <option value="6">Jamon</option>
+                          <option value="7">Jamon y Morron</option>
+                          <option value="8">Rucula</option>
+                          <option value="9">Napolitana</option>
+                          <option value="10">Muzzarella</option>
+                          <option value="11">Doble Muzzarella</option>
+                          <option value="12" disabled>--Empanadas--</option>
+                          <option value="13">Carne</option>
+                          <option value="14">Carne Picante</option>
+                          <option value="15">Cebolla y Queso</option>
+                          <option value="16">Humita</option>
+                          <option value="17">Jamon y Queso</option>
+                          <option value="18">Pollo</option>
+                          <option value="19">Verdura</option>
+                          <option value="20">Meditarranea</option>
+                          <option value="21">Roquefort, Jamon y Apio</option>
+                          <option value="22">Carne Cortada a Cuchillo</option>
+                          <option value="23">Carne Suave</option>
+        
+                      </select>
+                      <label for="CantidadComida">Cantidad:</label>
+                      <input class="inputCantidad" type="number" name="cantidad" size="3" placeholder="0"><br>
+                  </div>
+                  <br>
+                  <div class="botonAgregarComida">
+                      <button type="button" class="masItems">Agregar Comida</button>
+                      <br><br>
+                  </div>
+                  <hr>
+                  <div class="Delivery">
+                      <label for="datosDeEntrega"><h1>Datos de Entrega:</h1></label><br>
+        
+                      <label for="nombre">Nombre</label><br>
+                      <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+          
+                      <label for="direccion">Direccion De Entrega:</label><br>
+                      <input type="text" name="direccion" size="50" placeholder="Calle, Numero y Piso"><br><br>
+          
+                      <label for="adicional">Informacion Adicional:</label><br>
+                      <input type="text" name="adicional" size="50" placeholder="Describa el punto de entrega"><br><br>
+          
+                      <label for="telefono">Numero De Telefono:</label><br>
+                      <input type="text" name="telefono" size="10" placeholder=""><br><br>
+                      <button type="submit">Hacer Pedido</button>
+                      <br>  <br>
+                  </div>
+               </form>
             </div>
-            <br>
-            <div class="botonAgregarComida">
-                <button type="button" class="masItems">Agregar Comida</button>
-                <br><br>
-            </div>
-            <hr>
-            <div class="Delivery">
-                <label for="datosDeEntrega"><h1>Datos de Entrega:</h1></label><br>
-  
-                <label for="nombre">Nombre</label><br>
-                <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
-    
-                <label for="direccion">Direccion De Entrega:</label><br>
-                <input type="text" name="direccion" size="50" placeholder="Calle, Numero y Piso"><br><br>
-    
-                <label for="adicional">Informacion Adicional:</label><br>
-                <input type="text" name="adicional" size="50" placeholder="Describa el punto de entrega"><br><br>
-    
-                <label for="telefono">Numero De Telefono:</label><br>
-                <input type="text" name="telefono" size="10" placeholder=""><br><br>
-                <button type="submit">Hacer Pedido</button>
-                <br>  <br>
-            </div>
-        </form>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Script cajita -->
+    <script src="cajitaPedidos.js"></script>
+    <!-- Script cajita -->
+    
     
   </section>
 
-  <hr>
+
 
   <section id="contactos">
     <div class="contactos">

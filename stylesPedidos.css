@@ -15,10 +15,6 @@
     /* Mismas reglas de fuentes que el resto de la pagina */
     flex-wrap: wrap;
     padding: 0px;                  /* Sin padding queda diferente a la seccion del medio */
-    
-    
-
-
 }
 
 .divPedidos{
@@ -28,9 +24,7 @@
     /* align-items: center; */
     width: 95%;
     height: 95%;
-    background-color: rgb(26, 26, 26, 90%);
-
-    
+    background-color: rgb(26, 26, 26, 90%); 
 }
 
 .divPedidos h1{
@@ -63,9 +57,6 @@
     background-position: center;
 }
 
-
-
-
 .contactos{
     /* grid-area: pedidos; Para el Test Grid */
     color: black;
@@ -83,7 +74,6 @@
     /* Mismas reglas de fuentes que el resto de la pagina */
     flex-wrap: wrap;
     padding: 0px;                  /* Sin padding queda diferente a la seccion del medio */
-
 }
 
 .divContactos{
@@ -118,9 +108,73 @@
 
 #contactos{
     background-image: url("QuestionMarkBackgroundCortado.jpg");
-    
     background-size: 100% 100%;
-    
     /* background-color: transparent; */
     /* height: 300px; */
 }
+
+
+/* Cajita Pedidos */
+
+.cajitaCSS{
+    display: none; /* none para que no se vea ni bien carga la pagina */
+    position: fixed; /* para que se mueva con vos */
+    z-index: 1; /* asegurarse que quede adelante de todo */
+    padding-top: 5vh; /* centrar la cajita */
+    left: 0;
+    top: 0;
+    width: 100%; /* ancho de la cajita */
+    height: 95%; /* altura height */
+    overflow: auto; /* barrita de scroll por si hace falta */
+    background-color: rgb(0,0,0); /* Fondos oscuros al invocar cajita */
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+/* Reglas generales de la cajita */
+.cajitaContenedor{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+/* animacion */
+@-webkit-keyframes animatetop{
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop{
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+/* cerrar */
+.cerrar{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    float: right;
+}
+  
+.cerrar:hover,
+.cerrar:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.cajitaPedir{
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Cajita Pedidos */
