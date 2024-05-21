@@ -216,7 +216,7 @@
               <span class="cerrar">&times;</span>   <!-- El que lo saca me hace llorar NO TOCAR boton cerrar cajita -->
               <form action="#" method="POST">
                   <div class="opcionesComida">
-                      <select name="ComidaSelector" id="IDComida">
+                      <select class="selectComida" name="ComidaSelector" id="IDComida">
                           <option value="0" disabled selected>--Pizzas--</option>
                           <option value="1">Americana</option>
                           <option value="2">Cuatro Quesos</option>
@@ -256,16 +256,16 @@
                       <label for="datosDeEntrega"><h1>Datos de Entrega:</h1></label><br>
         
                       <label for="nombre">Nombre</label><br>
-                      <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+                      <input class="inputEntrega" type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
           
                       <label for="direccion">Direccion De Entrega:</label><br>
-                      <input type="text" name="direccion" size="50" placeholder="Calle, Numero y Piso"><br><br>
+                      <input class="inputEntrega" type="text" name="direccion" size="50" placeholder="Calle, Numero y Piso"><br><br>
           
                       <label for="adicional">Informacion Adicional:</label><br>
-                      <input type="text" name="adicional" size="50" placeholder="Describa el punto de entrega"><br><br>
+                      <input class="inputEntrega" type="text" name="adicional" size="50" placeholder="Describa el punto de entrega"><br><br>
           
                       <label for="telefono">Numero De Telefono:</label><br>
-                      <input type="text" name="telefono" size="10" placeholder=""><br><br>
+                      <input class="inputEntrega" type="text" name="telefono" size="10" placeholder=""><br><br>
                       <button type="submit">Hacer Pedido</button>
                       <br>  <br>
                   </div>
