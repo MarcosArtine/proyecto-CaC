@@ -298,24 +298,29 @@
         </div>
 
         
-
-        <form action="">
+        <script src="validacionForms.js"></script>
+        <form onsubmit="return ValidacionForms()" method="POST" name="formsContacto" id="formsContactoID">
           <label for="nombre">Nombre</label><br>
-          <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+          <input class="inputConsulta1" type="text" name="Nombre" id="nombre" size="50" placeholder="Nombre Completo"><br><br>
     
           <label for="direccion">Email</label><br>
-          <input type="email" name="email" size="50" placeholder="ejemplo@gmail.com"><br><br>
+          <input class="inputConsulta1" type="text" name="Email" id="email" size="50" placeholder="ejemplo@gmail.com"><br><br>
 
           <label for="telefono">Numero De Telefono (Opcional):</label><br>
-          <input type="text" name="telefono" size="50" placeholder=""><br><br>
+          <input class="inputConsulta1" type="text" name="Telefono" id="telefono" size="50" placeholder=""><br><br>
     
-          <label for="adicional">Dejanos tu consulta:</label><br>
-          <input type="text" name="adicional" size="50" placeholder="¿En que podemos ayudarte?"><br><br>
-    
-                
-          <button type="submit">Enviar</button>
-        </form>
+          <label for="consulta">Dejanos tu consulta:</label><br>
+          <!-- <input class="inputConsulta2" type="text" name="adicional" size="50" rows="4" placeholder="¿En que podemos ayudarte?"><br><br> -->
+          <textarea name="Consulta" class="inputConsulta2" id="consulta"></textarea> <br> <br>
 
+          <label for="archivo">Enviar documentacion:</label><br>
+          <input class="inputConsulta1" type="file" name="Archivo" id="archivo" size="50" placeholder="Selecci"><br><br>
+
+          <label for="terminosYCondiciones">Usted acepta nuestros terminos y condiciones:</label>
+          <input name="Checkbox" type="checkbox" id="checkboxContacto"><br><br>
+
+          <input type="submit"></button>
+        </form>
       </div>
 
     </div>
