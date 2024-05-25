@@ -1,15 +1,28 @@
 *{
   padding: 0;
-  margin: 0;    
+  margin: 0;  
+  box-sizing: border-box;
+  text-decoration: none;  
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.home{
+  background-image: url(./imagenes/wallNeon.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width:100%;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
 }
 
 .container .containerChild{
@@ -17,8 +30,8 @@
   justify-content: center;
   align-items: center;
   width: 95%;
-  height: 95vh;
-  background-color: rgb(26, 26, 26, 90%);
+  height: 100vh;
+  background-color: rgba(26, 26, 26, 0.383);
 }
 
 .textContainer{
@@ -32,12 +45,81 @@
 
 .titleContainer1{
   color: white;
-  font-size: 4rem;
+  margin: 10px 0 10px 0;
 }
 
-.titleContainer1 p{
-  
+.titleContainer1 h1{
+  font-size: 7rem;
+  color: white;
+  filter: drop-shadow(0px 0px 25px rgb(255, 255, 0));
+
 }
+
+.textContainer2{
+  color: white;
+  padding: 0 5rem ;
+}
+
+/* fuentes */
+
+
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+
+  /*ESTE VALOR ESTA MAL CREO*/
+  font-weight: weight;
+  font-style: normal;
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tilt-neon{
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+
+.pizza button:hover {
+  background-color: orangered;
+}
+
+.imgContainer1 img:hover{
+  filter: drop-shadow(0px 0px 15px rgb(255, 255, 0));
+  
+   
+}
+
+/* @keyframes burguerAnimation {
+  0%{
+    opacity: 1;
+    transform: translatey(0px);
+    filter: drop-shadow(30px 100px 14px rgba(0, 0, 0, 0.212));
+  }
+  50% {
+    opacity: 1;
+    transform: translatey(70px);
+    filter: drop-shadow(30px 0px 7px rgba(0, 0, 0, 0.212));
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+    filter: drop-shadow(30px 100px 10px rgba(0, 0, 0, 0.212));
+
+  }
+} */
+
+
+
 
 .textContainer2{
   padding: 4rem 3rem 0 6rem;
@@ -53,23 +135,27 @@
   margin-top: 5rem;
 }
 
-.buttonContainer button{
+.orderButton{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24rem;
   height: 4rem;
   border-radius: 3em;
-  border-color: orangered;
-  background-color: orangered;
-  font-size: 2.5rem;
+  border: none;
+  background-color: #6d0d31;
   color: white;
+  font-size: 2.5rem;
   filter: drop-shadow(18px 10px 10px rgba(0, 0, 0, 0.445));
+}
+
+.orderButton:hover{
+  filter: drop-shadow(0px 0px 5px rgb(255, 255, 0));
 }
 
 .orderIcon{
 width: 2.5rem;
-padding: 0 .5rem 0 0;
+padding: 0 .8rem .5rem 0;
 }
 
 .buttonContainer button:hover{
@@ -139,7 +225,7 @@ padding: 0 .5rem 0 0;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 220px;
+      bottom: 300px;
       filter: opacity(100%);
     }
 
@@ -249,11 +335,397 @@ padding: 0 .5rem 0 0;
       }
     }
 
-  
-#empanadas h2, #pizzas h2{
+ 
+/* Celulares pequeños */
+@media screen and (min-width: 480px) and (max-width: 699px) {
+  .titleContainer1 h1 {
+    font-size: 3.5em;
+    margin-top: 1em;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .textContainer2 p {
+    font-size: 1.4em;
+  }
+
+  .containerChild {
+    flex-direction: column;
+  }
+
+  .buttonContainer {
+    position: relative;
+    z-index: 19;
+  }
+
+  .pizzaSmokeContainer {
+    width: 65%;
+    margin-bottom: 2em;
+  }
+
+  .pizzaSmokeContainer .smokeContainer {
+    bottom: 30px;
+  }
+
+  .pizzaSmokeContainer .imgContainer1 img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 909px) {
+  .titleContainer1 h1 {
+    font-size: 3.5em;
+    margin-top: 1em;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .textContainer2 p {
+    font-size: 1.7em;
+  }
+  .containerChild {
+    flex-direction: column;
+  }
+
+  .buttonContainer {
+    position: relative;
+    z-index: 19;
+  }
+
+  .pizzaSmokeContainer {
+    width: 65%;
+    margin-bottom: 2em;
+  }
+
+  .pizzaSmokeContainer .imgContainer1 img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 910px) and (max-width: 1085px) {
+  .containerChild {
+    flex-direction: column;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+}
+
+/* Tabletas */
+@media screen and (min-width: 1085px) and (max-width: 1299px) {
+  .titleContainer1 h1 {
+    font-size: 5em;
+  }
+
+  .textContainer2 p {
+    font-size: 1.7em;
+  }
+
+  .pizzaSmokeContainer {
+    /* width: 40%;
+    height: 600px;
+    position: relative; */
+    margin-bottom: 15em;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1300px) and (max-width: 1530px) {
+  .titleContainer1 h1 {
+    font-size: 6em;
+  }
+
+  .textContainer2 p {
+    font-size: 1.7em;
+  }
+}
+
+
+
+/* PAULO */
+
+.navbar { /* Estilo para el navbar horizontal */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+.navbar .logo p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar .nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav li {
+  margin-right: 20px; /* Espacio entre elementos del navbar */
+}
+
+.navbar .nav li:last-child {
+  margin-right: 0; /* Elimina el espacio del último elemento */
+}
+
+.navbar .nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Efecto de transición */
+}
+
+.navbar .nav li a:hover {
+  color: orangered; /* Color al pasar el ratón */
+}
+
+.sidebar { /* Estilo para la barra lateral */
+  display: none; /* Oculta la barra lateral */
+}
+
+.container, .footer {
+  margin-left: 0px; /* Añade margen izquierdo igual al ancho de la sidebar */
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #2B3035;
+  color: white;
+  padding: 5em;
+  text-align: center;
+}
+
+.main-panel {
+  padding-bottom: calc(60px + 15px); 
+}
+
+
+
+
+.pedidos{
+  /* grid-area: pedidos; Para el Test Grid */
+  color: white;
+  display: flex;
+  justify-content: space-evenly;    /* manda las cosas al centro eje X */
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;                   /* Adaptar a gusto a futuro, uso % para que al dar al boton */
+  background-color: black;      /* "Agregar Mas" no se salga de su contenedor */
+
+  /* Mismas reglas de fuentes que el resto de la pagina */
+  font-size: 0.88em;
+  text-align: center;
+  font-weight: bold;
+  /* Mismas reglas de fuentes que el resto de la pagina */
+  flex-wrap: wrap;
+  padding: 0px;                  /* Sin padding queda diferente a la seccion del medio */
+}
+
+.divPedidos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  width: 95%;
+  height: 95%;
+  background-color: rgb(26, 26, 26, 90%); 
+}
+
+.divPedidos h1{
+  font-size: 40px;
+}
+
+.textoPedidos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  height: 95%;
+  background-color: black(8, 8, 8);
+}
+
+.inputCantidad{
+  width: 3em;                     /* Hace chiquitos el selector de cantidad */
+}
+
+.divPedidos form{
+  width: 95%;
+}
+
+.Delivery{
+  background-image: url("DeliveryPNG.png");
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactos{
+  /* grid-area: pedidos; Para el Test Grid */
+  color: black;
+  display: flex;
+  justify-content: space-evenly;    /* manda las cosas al centro eje X */
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;                   /* Adaptar a gusto a futuro, uso % para que al dar al boton */
+  /* background-color: white;*/      /* "Agregar Mas" no se salga de su contenedor */
+
+  /* Mismas reglas de fuentes que el resto de la pagina */
+  font-size: 0.88em;
+  text-align: center;
+  font-weight: bold;
+  /* Mismas reglas de fuentes que el resto de la pagina */
+  flex-wrap: wrap;
+  padding: 0px;                  /* Sin padding queda diferente a la seccion del medio */
+}
+
+.divContactos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  width: 95%;
+  height: 95%;
+  /* background-color: rgba(255, 255, 255, 1); */
+  background-image: url(".imagenes\QuestionMarkBackgroundCortado.jpg");
+}
+
+.textoContactos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  height: 95%;
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.textoContactos h1{
+  font-size: 40px;
+}
+
+.textoContactos h2{
+  font-size: 30px;
+}
+
+#contactos{
+  background-image: url("QuestionMarkBackgroundCortado.jpg");
+  background-size: 100% 100%;
+  /* background-color: transparent; */
+  /* height: 300px; */
+}
+
+
+/* Cajita Pedidos */
+
+.cajitaCSS{
+  display: none; /* none para que no se vea ni bien carga la pagina */
+  position: fixed; /* para que se mueva con vos */
+  z-index: 1; /* asegurarse que quede adelante de todo */
+  padding-top: 5vh; /* centrar la cajita */
+  left: 0;
+  top: 0;
+  width: 100%; /* ancho de la cajita */
+  height: 95%; /* altura height */
+  overflow: auto; /* barrita de scroll por si hace falta */
+  background-color: rgb(0,0,0); /* Fondos oscuros al invocar cajita */
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Reglas generales de la cajita */
+.cajitaContenedor{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* animacion */
+@-webkit-keyframes animatetop{
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop{
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* cerrar */
+.cerrar{
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  float: right;
+}
+
+.cerrar:hover,
+.cerrar:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cajitaPedir{
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Cajita Pedidos */
+
+
+/* MARCOS */
+
+
+body {
+  background: linear-gradient(355deg, #000000, #574671);
+}
+
+#empanadas h2,
+#pizzas h2 {
   font-size: 40px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  margin: 6rem;
 }
 
 ul {
@@ -266,22 +738,43 @@ ul li {
   margin-bottom: 20px;
 }
 
-hr{
+hr {
   margin: 40px;
 }
 
-.destacados{
+.destacados {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background: linear-gradient(135deg, rgb(44, 4, 58), rgb(188, 56, 56));
+  position: relative;
+  animation: cambiar 10s infinite;
 }
 
-.animacion{
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.animacion {
   animation: move;
   animation-duration: 2s;
 }
 
-.destacado{
+.linkForm a{
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.destacado {
   flex-grow: 1;
   width: 300px;
   max-width: 530px;
@@ -289,58 +782,75 @@ hr{
   cursor: pointer;
 }
 
-.pizzas{
+.pizzas {
   width: 100vw;
-  padding: 10px 0;
+  padding: 5rem 0;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(189, 182, 182, 0.685);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+#pizzas h2{
+  margin: 6rem;
+  color: white;
+}
 
-.pizza{
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.pizza {
+  box-shadow: 2px 2px 124px rgb(0, 0, 0);
   border-radius: 5%;
-  margin: 5px;
-  background-color: white;  
+  margin: 3em 2.6em;
+  background-color: white;
   border: 1px solid rgba(128, 128, 128, 0.705);
-  border-radius: 20px;
 }
 
-.empanadas{
+.empanadas {
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.empanada{
+.empanadas>ul>li{
+ color: white;
+}
+
+.empanada {
   margin: 30px 20px;
   background-color: white;
 }
 
-.nombre{
+.nombre {
   font-size: 0.88em;
   text-align: center;
   margin: 10px;
   font-weight: bold;
 }
 
-.imagen{
+.imagen {
   display: flex;
   justify-content: center;
 }
 
-.destacado img{
+.pizza:hover {
+  filter: drop-shadow(0px 0px 0px rgba(255, 255, 0, 0.582));
+}
+
+.destacado img {
   width: 90%;
 }
 
-img{
+img {
   width: 80%;
 }
 
-.pizza button, .empanada button{
+.pizza button,
+.empanada button {
   background-color: #fca757;
   color: white;
   text-align: center;
@@ -350,17 +860,17 @@ img{
   cursor: pointer;
 }
 
-.info{
+.info {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
 }
 
-.pizza button:hover,.empanada button:hover  {
+.pizza button:hover,
+.empanada button:hover {
   background-color: orangered;
 }
-
 
 @keyframes move {
   0% {
@@ -368,7 +878,7 @@ img{
     opacity: 0;
   }
 
-  100%{
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }

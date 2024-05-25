@@ -1,201 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizzeria El 10</title>  
-  <link rel="icon" type="image/png" href="pizza.png" />
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>  
-  <section>
-    <div class="container"> 
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria El 10</title>
+    <link rel="icon" type="image/png" href="pizza.png" />
+    <link rel="stylesheet" href="navFooter.css">
+    <link rel="stylesheet" href="seccion1.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar" data-color="red" data-image="imagenes/Grupo 10.png">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <div class="logo-tim">
+            <img src="assets/img/logo.png" alt="Logo">
+          </div>
+          <p class="simple-text">Grupo 10 - CaC</p>
+        </div>
+        <ol class="nav">
+          <li class="active">
+            <a href="/Pizzas">
+              <i class="pe-7s-cart"></i>
+              <p>Pizzas</p>
+            </a>
+          </li>
+          <li>
+            <a href="/Empanadas">
+              <i class="pe-7s-cart"></i>
+              <p>Empanadas</p>
+            </a>
+          </li>
+          <li>
+            <a href="/Pedidos">
+              <i class="pe-7s-cart"></i>
+              <p>Pedidos</p>
+            </a>
+          </li>
+          <li>
+            <a href="/Contactos">
+              <i class="pe-7s-cart"></i>
+              <p>Contactos</p>
+            </a>
+          </li>
+          <li>
+            <a href="/Configuracion">
+              <i class="pe-7s-id"></i>
+              <p>Configuración</p>
+            </a>
+          </li>
+          <li>
+            <a href="/CerrarSesion">
+              <p>Cerrar sesión</p>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    
+    <section class="home">
+      <div class="container">
         <div class="containerChild">
-            <div class="textContainer">
-                <div class="titleContainer1">
-                    <p>-- PIZZERIA EL 10 --</p>
-                </div>
-                <div class="textContainer2">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolorum necessitatibus quaerat optio architecto earum voluptas voluptates velit quaerat eos ipsam quam soluta molestias officia dolorum perspiciatis quae?</p>
-                </div>
-                <div class="buttonContainer">
-                    <button class="bebas-neue-regular orderButton">
-                        <img class="orderIcon" src="./imagenes/check-payment-svgrepo-com.png" alt="">
-                            Realizar pedido
-                          </div>
-                    </button>
+          <div class="textContainer">
+            <div class="titleContainer1">
+              <h1 class="poetsen-one-regular">•. Pizzeria el 10 .•</h1>
             </div>
-            <div class="pizzaSmokeContainer">
-                <div class="imgContainer1">
-                    <a href=""><img src="./imagenes/pizzaTitle.png" alt="Pizza"></a>
-                </div>
-                <div class="smokeContainer">
-                    <img class="smoke" src="./imagenes/smoke.png" alt="Humo">
-                </div>
-                <div class="smokeContainer">
-                    <img class="smoke2" src="./imagenes/smoke.png" alt="Humo">
-                </div>
-                <!-- <div class="smokeContainer">
-                    <img class="smoke3" src="./img/smoke.png" alt="Humo">
-                </div> -->
+            <div class="textContainer2 tilt-neon">
+              <p>
+                En el corazón de nuestra cocina, fusionamos la tradición
+                italiana con el sabor auténtico de las empanadas argentinas.
+                Desde deliciosas pizzas con ingredientes frescos y una masa
+                perfectamente horneada, hasta empanadas rellenas de sabores
+                únicos y irresistibles, cada bocado es un golazo culinario.
+                Nuestra cocina combina habilidad, precisión y pasión para
+                brindarte sabores que te dejarán sin aliento. ¡Ven y descubre el
+                sabor de la excelencia con pizzas y empanadas "El 10".
+              </p>
             </div>
+            <div class="buttonContainer">
+              <a class="orderButton tilt-neon" href="formDePedidos.html">
+                📝Realizar pedido
+              </a>
+            </div>
+          </div>
+          <div class="pizzaSmokeContainer">
+            <a href="">
+              <div class="imgContainer1">
+                <img src="./imagenes/pizzaTitle.png" alt="Pizza" />
+              </div>
+              <div class="smokeContainer">
+                <img class="smoke" src="./imagenes/smoke.png" alt="Humo" />
+              </div>
+              <div class="smokeContainer">
+                <img class="smoke2" src="./imagenes/smoke.png" alt="Humo" />
+              </div>
+            </a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+
+
+    <!-- Marcos Artine -->
+
     <section id="pizzas">  
-    <h2> ELEGÍ TU PIZZA </h2>
-
-    <div class="destacados" id="efecto">
-      <div class="destacado">
-        <div class="imagen">
-          <img src="imagenes/destacados_pizzas-01-1.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
-        </div>   
-      </div>
-      <div class="destacado">     
-        <div class="imagen">  
-          <img src="imagenes/destacados_pizzas-02.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
-        </div>
-      </div>
-      <div class="destacado"> 
-        <div class="imagen">      
-          <img src="imagenes/destacados_pizzas-03.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
+        <h2> ELEGÍ TU PIZZA </h2>
+    <!-- <p><a href="formDePedidos.html">Pedir</a></p> -->
+        <div class="destacados" id="efecto">
+          <div class="destacado">
+            <div class="imagen">
+              <img src="imagenes/destacados_pizzas-01-1.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
+            </div>   
           </div>
-      </div>
-    </div>
-
-    <div class="pizzas">
-      <div class="pizza">
-        <div class="imagen">       
-          <img src="imagenes/Calabresa-Baja-Web.jpeg" alt=`Imagen de una pizza calabresa` />
-        </div>
-        <div class="nombre">CALABRESA</div>      
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/Fugazzetav2-Baja-Web.jpeg" alt=`Imagen de una pizza fugazzeta` />
-        </div>
-        <div class="nombre">FUGAZZETA</div>   
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>  
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/Jamon-Baja-Web.jpeg" alt=`Imagen de una pizza de jamon` />
-        </div>
-        <div class="nombre">JAMÓN</div>  
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>  
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/JamonyMorron-Baja-Web_plus.jpeg" alt=`Imagen de una pizza de jamon y queso` />
-        </div>
-        <div class="nombre">JAMÓN Y MORRON</div>     
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/Rucula-Baja-Web.jpeg" alt=`Imagen de una pizza de rucula` />
-        </div>
-        <div class="nombre">RUCULA</div>      
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/Napolitana-Baja-Web.jpg" alt=`Imagen de una pizza napolitana` />
-        </div>
-        <div class="nombre">NAPOLITANA</div>    
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/Muzza_caliente.png" alt=`Imagen de una pizza de muzzalera` />
-        </div>
-        <div class="nombre">MUZZALERA</div>    
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-      <div class="pizza">
-        <div class="imagen">
-          <img src="imagenes/DobleMuzza.png" alt=`Imagen de una pizza de doble muzzalera` />
-        </div>
-        <div class="nombre">DOBLE MUZZALERA</div>    
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-    </div>
-    <hr>
-  </section>
-
-  <section id="empanadas">  
-    <h2> ELEGÍ TUS EMPANADAS </h2>
-
-    <div class="destacados" id="efecto2">
-      <div class="destacado">  
-        <div class="imagen">     
-          <img src="imagenes/destacados-empanadas-01.png" alt=`Imagen de una empanada de carne` onclick="abrirCompra()"/>
-        </div>
-      </div>
-      <div class="destacado">     
-        <div class="imagen">  
-          <img src="imagenes/destacados-empanadas-02.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
-        </div>
-      </div>
-    </div>
-
-    <div class="empanadas">
-      
-      <div class="empanada">
-        <div class="imagen">       
-          <img src="imagenes/comun_cerrada.png" alt=`Imagen de una pizza calabresa` />
-        </div>    
-        <div class="info">
-          <button onclick="abrirCompra()">PEDI ONLINE</button>   
-        </div>
-      </div>
-
-        <ul>
-          <li>Carne</li>
-          <li>Carne Picante</li>
-          <li>Cebolla Y Queso</li>
-          <li>Humita</li>
-          <li>Jamón Y Queso</li>
-          <li>Pollo</li>
-          <li>Verdura</li>
-        </ul>
-
-        <div class="empanada">
-          <div class="imagen">       
-            <img src="imagenes/Mediterranea_cerrada_300-2.png" alt=`Imagen de una pizza calabresa` />
-          </div>    
-          <div class="info">
-            <button onclick="abrirCompra()">PEDI ONLINE</button>   
+          <div class="destacado">     
+            <div class="imagen">  
+              <img src="imagenes/destacados_pizzas-02.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
+            </div>
+          </div>
+          <div class="destacado"> 
+            <div class="imagen">      
+              <img src="imagenes/destacados_pizzas-03.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
+              </div>
           </div>
         </div>
+    
+        <div class="pizzas">
+          <div class="pizza">
+            <div class="imagen">       
+              <img src="imagenes/Calabresa-Baja-Web.jpeg" alt=`Imagen de una pizza calabresa` />
+            </div>
+            <div class="nombre">CALABRESA</div>      
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/Fugazzetav2-Baja-Web.jpeg" alt=`Imagen de una pizza fugazzeta` />
+            </div>
+            <div class="nombre">FUGAZZETA</div>   
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>  
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/Jamon-Baja-Web.jpeg" alt=`Imagen de una pizza de jamon` />
+            </div>
+            <div class="nombre">JAMÓN</div>  
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>  
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/JamonyMorron-Baja-Web_plus.jpeg" alt=`Imagen de una pizza de jamon y queso` />
+            </div>
+            <div class="nombre">JAMÓN Y MORRON</div>     
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/Rucula-Baja-Web.jpeg" alt=`Imagen de una pizza de rucula` />
+            </div>
+            <div class="nombre">RUCULA</div>      
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/Napolitana-Baja-Web.jpg" alt=`Imagen de una pizza napolitana` />
+            </div>
+            <div class="nombre">NAPOLITANA</div>    
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/Muzza_caliente.png" alt=`Imagen de una pizza de muzzalera` />
+            </div>
+            <div class="nombre">MUZZALERA</div>    
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+          <div class="pizza">
+            <div class="imagen">
+              <img src="imagenes/DobleMuzza.png" alt=`Imagen de una pizza de doble muzzalera` />
+            </div>
+            <div class="nombre">DOBLE MUZZALERA</div>    
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="empanadas">  
+        <h2> ELIGE TUS EMPANADAS </h2>
+    
+        <div class="destacados" id="efecto2">
+          <div class="destacado">  
+            <div class="imagen">     
+              <img src="imagenes/destacados-empanadas-01.png" alt=`Imagen de una empanada de carne` onclick="abrirCompra()"/>
+            </div>
+          </div>
+          <div class="destacado">     
+            <div class="imagen">  
+              <img src="imagenes/destacados-empanadas-02.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
+            </div>
+          </div>
+        </div>
+    
+        <div class="empanadas">
+          
+          <div class="empanada">
+            <div class="imagen">       
+              <img src="imagenes/comun_cerrada.png" alt=`Imagen de una pizza calabresa` />
+            </div>    
+            <div class="info">
+              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+            </div>
+          </div>
+    
+            <ul>
+              <li>Carne</li>
+              <li>Carne Picante</li>
+              <li>Cebolla Y Queso</li>
+              <li>Humita</li>
+              <li>Jamón Y Queso</li>
+              <li>Pollo</li>
+              <li>Verdura</li>
+            </ul>
+    
+            <div class="empanada">
+              <div class="imagen">       
+                <img src="imagenes/Mediterranea_cerrada_300-2.png" alt=`Imagen de una pizza calabresa` />
+              </div>    
+              <div class="info">
+                <button onclick="abrirCompra()">PEDI ONLINE</button>   
+              </div>
+            </div>
+    
+            <ul>
+              <li>Mediterranea</li>
+              <li>Roquefort, Jamón Y Apio</li>
+              <li>Carne Cortada a Cuchillo</li>
+              <li>Carne Suave</li>
+            </ul>
+    
+        </div>
+        <hr>
+      </section>
 
-        <ul>
-          <li>Mediterranea</li>
-          <li>Roquefort, Jamón Y Apio</li>
-          <li>Carne Cortada a Cuchillo</li>
-          <li>Carne Suave</li>
-        </ul>
+      <section id="Pedidos">
+        <div class="cajitaCSS" id="cajitaJS">   <!-- CajitaCSS para el CSS y cajitaJS para el JS, duh... -->
+          <div class="cajitaContenedor">        <!-- Cajita que va a ser invocada -->
+            <div class="cajitaMain">            <!-- Contenidos para la cajita aca -->
+              <div class="pedidos">
+                <div class="divPedidos">
+                  <div class="textoPedidos"> 
+                    <h1 class="titulo">Pedir:</h1>
+                  </div>
+                  <span class="cerrar">&times;</span>   <!-- El que lo saca me hace llorar NO TOCAR boton cerrar cajita -->
+                  <form action="#" method="POST">
+                      <div class="opcionesComida">
+                          <select name="ComidaSelector" id="IDComida">
+                              <option value="0" disabled selected>--Pizzas--</option>
+                              <option value="1">Americana</option>
+                              <option value="2">Cuatro Quesos</option>
+                              <option value="3">Provolone</option>
+                              <option value="4">Calabresa</option>
+                              <option value="5">Fugazzetta</option>
+                              <option value="6">Jamon</option>
+                              <option value="7">Jamon y Morron</option>
+                              <option value="8">Rucula</option>
+                              <option value="9">Napolitana</option>
+                              <option value="10">Muzzarella</option>
+                              <option value="11">Doble Muzzarella</option>
+                              <option value="12" disabled>--Empanadas--</option>
+                              <option value="13">Carne</option>
+                              <option value="14">Carne Picante</option>
+                              <option value="15">Cebolla y Queso</option>
+                              <option value="16">Humita</option>
+                              <option value="17">Jamon y Queso</option>
+                              <option value="18">Pollo</option>
+                              <option value="19">Verdura</option>
+                              <option value="20">Meditarranea</option>
+                              <option value="21">Roquefort, Jamon y Apio</option>
+                              <option value="22">Carne Cortada a Cuchillo</option>
+                              <option value="23">Carne Suave</option>
+            
+                          </select>
+                          <label for="CantidadComida">Cantidad:</label>
+                          <input class="inputCantidad" type="number" name="cantidad" size="3" placeholder="0"><br>
+                      </div>
+                      <br>
+                      <div class="botonAgregarComida">
+                          <button type="button" class="masItems">Agregar Comida</button>
+                          <br><br>
+                      </div>
+                      <hr>
+                      <div class="Delivery">
+                          <label for="datosDeEntrega"><h1>Datos de Entrega:</h1></label><br>
+            
+                          <label for="nombre">Nombre</label><br>
+                          <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+              
+                          <label for="direccion">Direccion De Entrega:</label><br>
+                          <input type="text" name="direccion" size="50" placeholder="Calle, Numero y Piso"><br><br>
+              
+                          <label for="adicional">Informacion Adicional:</label><br>
+                          <input type="text" name="adicional" size="50" placeholder="Describa el punto de entrega"><br><br>
+              
+                          <label for="telefono">Numero De Telefono:</label><br>
+                          <input type="text" name="telefono" size="10" placeholder=""><br><br>
+                          <button type="submit">Hacer Pedido</button>
+                          <br>  <br>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Script cajita -->
+        <script src="cajitaPedidos.js"></script>
+        <!-- Script cajita -->
+        
+        
+      </section>
+    
+    
+    
+      <section id="contactos">
+        <div class="contactos">
+          <div class="divContactos">
+            <div class="textoContactos">
+    
+              <h1>CONTACTO</h1>
+              
+              <h2>¿Tenes dudas, consultas, sugerencias o quejas?</h2>
+    
+    
+    
+            </div>
+    
+            
+    
+            <form action="">
+              <label for="nombre">Nombre</label><br>
+              <input type="text" name="nombre" size="50" placeholder="Nombre Completo"><br><br>
+        
+              <label for="direccion">Email</label><br>
+              <input type="email" name="email" size="50" placeholder="ejemplo@gmail.com"><br><br>
+    
+              <label for="telefono">Numero De Telefono (Opcional):</label><br>
+              <input type="text" name="telefono" size="50" placeholder=""><br><br>
+        
+              <label for="adicional">Dejanos tu consulta:</label><br>
+              <input type="text" name="adicional" size="50" placeholder="¿En que podemos ayudarte?"><br><br>
+        
+                    
+              <button type="submit">Enviar</button>
+            </form>
+    
+          </div>
+    
+        </div>
+    
+      </section>
+    
 
-    </div>
-    <hr>
-  </section>
-  <script src="script.js"></script>
-</body>
+      <div class="footer">
+      <!-- Contenido del footer -->
+      &copy; 
+      <script>document.write(new Date().getFullYear())</script> Codo a Codo - Grupo 10
+  </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
