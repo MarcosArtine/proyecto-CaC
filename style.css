@@ -653,11 +653,11 @@ padding: 0 .8rem .5rem 0;
   display: none; /* none para que no se vea ni bien carga la pagina */
   position: fixed; /* para que se mueva con vos */
   z-index: 1; /* asegurarse que quede adelante de todo */
-  padding-top: 5vh; /* centrar la cajita */
+  padding-top: 10vh; /* centrar la cajita */
   left: 0;
   top: 0;
   width: 100%; /* ancho de la cajita */
-  height: 95%; /* altura height */
+  height: 100%; /* altura height */
   overflow: auto; /* barrita de scroll por si hace falta */
   background-color: rgb(0,0,0); /* Fondos oscuros al invocar cajita */
   background-color: rgba(0,0,0,0.4); 
@@ -702,12 +702,6 @@ padding: 0 .8rem .5rem 0;
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.cajitaPedir{
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
 }
 
 /* Cajita Pedidos */

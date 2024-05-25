@@ -1,15 +1,23 @@
 var modal = document.getElementById("cajitaJS");
 
+var btn = document.querySelectorAll("#botonPedir");
 
-var btn = document.getElementById("botonPedir");        // accionador al pedir, todos
+for (let i = 0; i < btn.length; i++) {
+  btn[i].onclick = function() {
+    modal.style.display = "block";
+  }
+}
+
+
+// var btn = document.getElementById("botonPedir");        // accionador al pedir, todos
                                                         // los botones para pedir tienen
                                                         // que tener id="botonPedir"
 var span = document.getElementsByClassName("cerrar")[0];     // encuentra el boton X para cerrar
 
 
-btn.onclick = function() {              // cuando le dan a algun boton de pedir muestra la cajita
-  modal.style.display = "block";        // cambia el display
-}
+// btn.onclick = function() {              // cuando le dan a algun boton de pedir muestra la cajita
+//   modal.style.display = "block";        // cambia el display
+// }
 
 
 span.onclick = function() {             // que cierre al darle a la X de cerrar
@@ -22,3 +30,8 @@ window.onclick = function(event) {      // que cierre cuando le das click fuera 
     modal.style.display = "none";
   }
 }
+
+// var btn2 = document.getElementById("botonPedir");
+// btn.onclick = function() {              // cuando le dan a algun boton de pedir muestra la cajita
+//   modal.style.display = "block";        // cambia el display
+// }
