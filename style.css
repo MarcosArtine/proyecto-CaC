@@ -790,9 +790,10 @@ hr {
   background-position: center;
 }
 
-#pizzas h2{
+#pizzas h2, #empanadas h2{
   margin: 6rem;
   color: white;
+  text-align: center;
 }
 
 .pizza {
