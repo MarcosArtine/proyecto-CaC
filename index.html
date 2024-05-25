@@ -19,8 +19,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzeria El 10</title>
     <link rel="icon" type="image/png" href="pizza.png" />
-    <link rel="stylesheet" href="navFooter.css">
-    <link rel="stylesheet" href="seccion1.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -34,25 +32,25 @@
         </div>
         <ol class="nav">
           <li class="active">
-            <a href="/Pizzas">
+            <a href="#pizzas">
               <i class="pe-7s-cart"></i>
               <p>Pizzas</p>
             </a>
           </li>
           <li>
-            <a href="/Empanadas">
+            <a href="#empanadas">
               <i class="pe-7s-cart"></i>
               <p>Empanadas</p>
             </a>
           </li>
           <li>
-            <a href="/Pedidos">
+            <a href="#Pedidos">
               <i class="pe-7s-cart"></i>
               <p>Pedidos</p>
             </a>
           </li>
           <li>
-            <a href="/Contactos">
+            <a href="#contactos">
               <i class="pe-7s-cart"></i>
               <p>Contactos</p>
             </a>
@@ -219,12 +217,12 @@
         <div class="destacados" id="efecto2">
           <div class="destacado">  
             <div class="imagen">     
-              <img src="imagenes/destacados-empanadas-01.png" alt=`Imagen de una empanada de carne` onclick="abrirCompra()"/>
+              <img src="imagenes/destacados-empanadas-01.png" alt=`Imagen de una empanada de carne` id="botonPedir"/>
             </div>
           </div>
           <div class="destacado">     
             <div class="imagen">  
-              <img src="imagenes/destacados-empanadas-02.png" alt=`Imagen de una pizza calabresa` onclick="abrirCompra()"/>
+              <img src="imagenes/destacados-empanadas-02.png" alt=`Imagen de una pizza calabresa` id="botonPedir"/>
             </div>
           </div>
         </div>
@@ -236,7 +234,7 @@
               <img src="imagenes/comun_cerrada.png" alt=`Imagen de una pizza calabresa` />
             </div>    
             <div class="info">
-              <button onclick="abrirCompra()">PEDI ONLINE</button>   
+              <button id="botonPedir">PEDI ONLINE</button>   
             </div>
           </div>
     
@@ -343,9 +341,6 @@
         </div>
       </div>
     </div>
-    <!-- Script cajita -->
-    <script src="cajitaPedidos.js"></script>
-    <!-- Script cajita -->
     
     
   </section>
