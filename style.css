@@ -578,7 +578,7 @@ padding: 0 .8rem .5rem 0;
 .inputCantidad{
   width: 3em;                     /* Hace chiquitos el selector de cantidad */
 }
-
+                                  /* Update */
 .inputEntrega{
   width: 50vw;
 }
